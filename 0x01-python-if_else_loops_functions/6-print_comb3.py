@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for firstDigit in range(0, 10):
-    for secDigit in range(firstDigit + 1, 10):
-        if firstDigit == 8 and secDigit == 9:
-            print("{}{}".format(firstDigit, secDigit))
+for i in range(0, 10):
+    for j in range((i+1), 10):
+        if (i is not 8) or (j is not 9):
+            print("{}{}, ".format(i, j), end="")
         else:
-            print("{}{}".format(firstDigit, secDigit), end=', ')
+            print("{}{}".format(i, j))
