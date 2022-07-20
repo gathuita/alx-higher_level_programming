@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
-    a_dict = a_dictionary.copy()
-    for key in a_dict:
-        a_dict[key] *= 2
+    if a_dictionary is not None:
+        dict = {}
+        tmp = {}
+        for key, value in a_dictionary.items():
+            newval = value * 2
+            tmp = {key: newval}
+            dict.update(tmp)
+        return (dict)
+    return None
 
-    return a_dict
+# return {key: a_dictionary[key]*2 for key in a_dictionary}
