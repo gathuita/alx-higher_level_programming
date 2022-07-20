@@ -1,20 +1,11 @@
 #!/usr/bin/python3
-from sys import argv
+if __name__ == "__main__":
+    import sys
+    result = 0
+    if (len(sys.argv) > 1):
+        for i in range(1, len(sys.argv)):
+            result += (int(sys.argv[i]))
+    print("{:d}".format(result))
 
-
-def addArgs():
-    argc = len(argv)
-    if argc == 1:
-        return 0
-
-    add = 0
-    index = 1
-    while index < argc:
-        add += int(argv[index])
-        index += 1
-
-    return add
-
-
-if __name__ == '__main__':
-    print(addArgs())
+# import sys
+# print("{:d}".format(sum(int(n) for n in sys.argv[1:])))
