@@ -21,21 +21,10 @@ class Student:
         """
         Args:
             attrs (list): The attributes to represent.
-
         Returns:
             Dictionary representation of student
         """
         if (type(attrs) == list and
                 all(type(stuff) == str for stuff in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-        return self.__dict_
-
-    def reload_from_json(self, json):
-        """
-        Replace all attributes of Student.
-
-        Args:
-            json (dict): Dict to replace attributes with.
-        """
-        for k, v in json.items():
-            setattr(self, k, v)_
+        return self.__dict__
