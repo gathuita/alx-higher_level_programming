@@ -1,4 +1,3 @@
---create database and 
---should not fail if the database already exists in the server.
+-- create database; shouldn't fail if existent
 
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
