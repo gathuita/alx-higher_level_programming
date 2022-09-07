@@ -1,3 +1,3 @@
---Display all tables in a Database
+-- list all tables in database passed as argument.
 
 SHOW tables;
