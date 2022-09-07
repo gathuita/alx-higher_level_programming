@@ -1,3 +1,3 @@
---Display all tables in a Database.
+--Display all tables in a Database
 
 SHOW tables;
