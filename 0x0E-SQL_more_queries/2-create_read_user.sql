@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 -- script that creates the database hbtn_0d_2 and the user user_0d_2.
 -- conditions:
 -- user_0d_2 should have only SELECT privilege in the database hbtn_0d_2
 -- The user_0d_2 password should be set to user_0d_2_pwd
 -- creates the database hbtn_0d_2 and the user user_0d_2
+=======
+-- creates the database hbtn_0d_2 and the user user_0d_2
+-- user_0d_2 password should be set to user_0d_2_pwd
+>>>>>>> 8f8cbccdb15310209b1f2f97a609f59a361debc4
 -- should not fail if either already exists
 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_2;

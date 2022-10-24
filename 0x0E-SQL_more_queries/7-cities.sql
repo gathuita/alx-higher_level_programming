@@ -13,4 +13,7 @@ CREATE TABLE IF NOT EXISTS cities (
        name VARCHAR(256) NOT NULL,
        FOREIGN KEY(state_id) REFERENCES hbtn_0d_usa.states(id)
 );
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8f8cbccdb15310209b1f2f97a609f59a361debc4
